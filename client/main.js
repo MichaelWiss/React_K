@@ -8,13 +8,14 @@ import ImageList from './components/image_list';
 
 
 //create a component
-const App = () => {
-
-	return (
+class App extends Component{
+	render() {
+    return (
 		<div>
 		  <ImageList />
 		</div>
 	);
+  }
 };
 
 //render this component to the screen
