@@ -1,6 +1,7 @@
 import React from 'react';
 
-const ImageScore = () => {
+
+const ImageScore = (props) => {
    //props.ups
    //props.downs
  const { ups, downs } = props;
@@ -15,8 +16,8 @@ const ImageScore = () => {
        <div>
         Ups/Downs
 	        <div className="progress">
-		       <div style={{ width: upsPercent}} className="progress-bar progress-bar-succes progress-bar-striped"/>
-		       <div style={{ width: downsPercent}}className="progress-bar progress-bar-danger progress-bar-striped"/>
+		       <div style={{ width: upsPercent}} className="progress-bar progress-bar-striped bg-success"/>
+		       <div style={{ width: downsPercent}} className="progress-bar progress-bar-danger progress-bar-striped"/>
 	       </div>
        </div>
    	);
