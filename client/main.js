@@ -21,11 +21,11 @@ class App extends Component{
 	axios.get('https://api.imgur.com/3/gallery/hot/viral/0')
         .then(response => this.setState({ images: response.data.data }));
 }
-	render() {
-		console.log(this.state.images);
+
+render() {
     return (
 		<div>
-		  <ImageList />
+		  <ImageList images={this.state.images}/>
 		</div>
 	);
   }
